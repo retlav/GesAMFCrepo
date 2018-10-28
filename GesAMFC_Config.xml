@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GesAMFC_Config>
+  <field><![CDATA[]]></field>
+  <LogsFileName><![CDATA[GesAMFC_Admin.log]]></LogsFileName>
+  <TimerIntervalReload><![CDATA[3600000]]></TimerIntervalReload><!-- 3600000s = 1H -->
+
+  <!-- ************************************************************ -->
+  <!-- +++++++++++++++++++++ OLE_DB_Provider ++++++++++++++++++++++ -->
+  <!-- Microsoft.Jet.OLEDB.4.0: x86 32 bit system -->
+  <!--<OLE_DB_Provider><![CDATA[Microsoft.Jet.OLEDB.4.0]]></OLE_DB_Provider>-->
+
+  <!-- Microsoft.ACE.OLEDB.12.0: x64 64Bit machine: .xlsx -->
+  <!--<OLE_DB_Provider><![CDATA[Microsoft.ACE.OLEDB.12.0]]></OLE_DB_Provider>-->
+  
+  <!-- Microsoft.ACE.OLEDB.4.0: x64 64Bit machine: .xlsx -->
+  <!--<OLE_DB_Provider><![CDATA[Microsoft.ACE.OLEDB.4.0]]></OLE_DB_Provider>-->
+
+  <!-- Microsoft.Jet.OLEDB.4.0: x86 32 bit system -->
+  <OLE_DB_Provider><![CDATA[Microsoft.Jet.OLEDB.4.0]]></OLE_DB_Provider>
+  <!-- ************************************************************ -->
+  
+    
+  
+
+  <!-- ************************************************************ -->
+  <!-- +++++++++++++++++++++++++++ DBFs +++++++++++++++++++++++++++ -->
+  <!--O nome dos DBFs nao pode ultrapassar os 8 digitos-->
+  <DBF_AMFC_DirPath><![CDATA[bd]]></DBF_AMFC_DirPath>
+  <DBF_File_Extention><![CDATA[.DBF]]></DBF_File_Extention>
+  <DBF_AMFC_SOCIO_FileName><![CDATA[DB_SOCIO]]></DBF_AMFC_SOCIO_FileName>
+  <DBF_AMFC_JOIAS_FileName><![CDATA[DB_JOIAS]]></DBF_AMFC_JOIAS_FileName>
+  <DBF_AMFC_QUOTA_FileName><![CDATA[DB_QUOTA]]></DBF_AMFC_QUOTA_FileName>
+  <DBF_AMFC_CAIXA_FileName><![CDATA[DB_CAIXA]]></DBF_AMFC_CAIXA_FileName>
+  <DBF_AMFC_INFRA_FileName><![CDATA[DB_INFRA]]></DBF_AMFC_INFRA_FileName>
+  <DBF_AMFC_CEDEN_FileName><![CDATA[DB_CEDEN]]></DBF_AMFC_CEDEN_FileName>
+  <DBF_AMFC_ESGOT_FileName><![CDATA[DB_ESGOT]]></DBF_AMFC_ESGOT_FileName>
+  <DBF_AMFC_RECON_FileName><![CDATA[DB_RECON]]></DBF_AMFC_RECON_FileName>
+  <DBF_AMFC_RECIB_FileName><![CDATA[DB_RECIB]]></DBF_AMFC_RECIB_FileName>
+  <DBF_AMFC_PARAM_FileName><![CDATA[DB_PARAM]]></DBF_AMFC_PARAM_FileName>
+  <!-- ************************************************************ -->
+
+  <DBF_AMFC_Euro_To_Escudos><![CDATA[200,482]]></DBF_AMFC_Euro_To_Escudos>
+  
+  <!-- ************************************************************* -->
+  <!-- +++++++++++++++++++++++++++ USERS +++++++++++++++++++++++++++ -->
+  <Administrators><![CDATA[valter9,PROGSIBS,JAOLIVEI,mleitao,acastanheira]]></Administrators>
+  <Users><![CDATA[geral]]></Users>
+  <!-- ************************************************************* -->
+
+  
+  <!-- ****************************************************************** -->
+  <!-- +++++++++++++++++++++++++++ PARAMETROS +++++++++++++++++++++++++++ -->
+  <DBF_AMFC_JOIA_VALOR><![CDATA[300,00]]></DBF_AMFC_JOIA_VALOR>
+  <DBF_AMFC_QUOTA_VALOR_MES><![CDATA[1,25]]></DBF_AMFC_QUOTA_VALOR_MES> 
+  <DBF_AMFC_INFRA_VALOR_METRO><![CDATA[40,00]]></DBF_AMFC_INFRA_VALOR_METRO>
+  <DBF_AMFC_CEDENC_VALOR_METRO><![CDATA[25,00]]></DBF_AMFC_CEDENC_VALOR_METRO>
+  <DBF_AMFC_ESGOT_VALOR_METRO><![CDATA[0,00]]></DBF_AMFC_ESGOT_VALOR_METRO>
+  <DBF_AMFC_RECONV_VALOR_METRO><![CDATA[50,00]]></DBF_AMFC_RECONV_VALOR_METRO>
+  <!-- ****************************************************************** -->
+
+
+</GesAMFC_Config>

@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+/*	-----------------------------------------------------
+	
+	Base Style Sheet
+	
+---------------------------------------------------------
+
+	* Name: Marktest
+	
+	* Developed by: Marktest
+	  
+------------------------------------------------------ */
+
+/*	-----------------------------------------------------
+	Reset
+------------------------------------------------------ */
+
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	text-align: left;
+	text-decoration: none;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+q:before, q:after
+blockquote:before, blockquote:after {
+	content:'';
+}
+caption, th {
+	text-align:left;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/*	-----------------------------------------------------
+	end Reset
+------------------------------------------------------ */
+
+/*	-----------------------------------------------------
+	Default Typography
+------------------------------------------------------ */
+
+/*	-----------------------------------------------------
+	Base Units
+------------------------------------------------------ */
+
+body {
+	font-size: 62.5%;
+	font-family: Arial, Verdana, Helvetica, Sans-Serif;
+	color: #112C58;
+}
+
+/*	-----------------------------------------------------
+	Headings
+------------------------------------------------------ */
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
+}
+h3 {
+	font-size: 1.6em;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+h4 {
+	font-size: 1.5em;
+	line-height: 1.25;
+	margin-bottom: 1.25em;
+}
+h5 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/*	-----------------------------------------------------
+	Text Elements
+------------------------------------------------------ */
+
+p {
+	margin: 0 0 .75em;
+}
+p.last {
+	margin-bottom: 0;
+}
+p img {
+	margin: 1.5em 1.5em 1.5em 0;
+	padding: 0;
+}
+p img.top {
+	margin-top: 0;
+}
+
+/* * */
+
+ul, ol {
+	margin:0 1.5em 1.5em 1.5em;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+dl {
+	margin: 0 0 1.5em 0;
+}
+dl dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 1.5em
+}
+
+/* * */
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+}
+address {
+	margin-top: 1.5em; font-style: italic;
+}
+del {
+	color:#666;
+}
+
+/* * */
+
+a {
+	color: #3f6e80;
+	text-decoration: none;
+	cursor: pointer;
+}
+a:focus, a:hover {
+	color: #0692c6;
+}
+
+/* * */
+
+blockquote {
+	margin: 1.5em;
+	color: #666;
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+	line-height: 20px;
+}
+em,dfn {
+	font-style: italic;
+}
+dfn {
+	font-weight: bold;
+}
+pre {
+	margin: 1.5em 0;
+	white-space: pre;
+}
+pre, code, tt {
+	font: 1em 'lucida console', monospace;
+	line-height: 1.5;
+}
+tt {
+	display: block;
+	margin: 1.5em 0;
+	line-height: 1.5;
+}
+
+/*	-----------------------------------------------------
+	Tables
+------------------------------------------------------ */
+
+table {
+	margin: 0;
+	padding: 10px;
+}
+td {
+	vertical-align: middle;
+	text-align: center;
+	color: #666;
+}
+td.day {
+	vertical-align: middle;
+	font-size: 28px;
+}
+td.month {
+	padding: 0 0 3px 0;
+	vertical-align: bottom;
+	font-size: 14px;
+}
+td.year {
+	padding: 3px 0 0 0;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+/*	-----------------------------------------------------
+	end Default Typography
+------------------------------------------------------ */
+
+/*	-----------------------------------------------------
+	
+	end Base Style Sheet
+	
+------------------------------------------------------ */

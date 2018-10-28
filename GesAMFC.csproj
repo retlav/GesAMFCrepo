@@ -1,0 +1,1363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E4C10B6-8B8E-4AD4-8639-620411E0FDA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GesAMFC</RootNamespace>
+    <AssemblyName>GesAMFC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>GesAMFC.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.BonusSkins.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.Designer.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Charts.Designer.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Charts.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Data.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Data.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1.UI, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1.UI.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.UI.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Images.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Images.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Office.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Office.v15.1.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Printing.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Printing.v15.1.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.RichEdit.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.RichEdit.v15.1.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Sparkline.v15.1.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v15.1.Core, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Spreadsheet.v15.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v15.1.Core.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Spreadsheet.v15.1.Core.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Tutorials.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Tutorials.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1.UI, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1.UI.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.UI.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraBars.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraBars.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.UI, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Wizard.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.Wizard.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraEditors.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraEditors.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraGrid.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1.Design, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraGrid.v15.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraGrid.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraLayout.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraLayout.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraNavBar.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraPrinting.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Design, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.Extensions.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.Extensions.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.1, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraSpreadsheet.v15.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.1.Design, Version=15.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraSpreadsheet.v15.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v15.1.resources, Version=15.1.0.0, Culture=pt, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DevExpress-Framework-v15.1.7\DevExpress.XtraSpreadsheet.v15.1.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_CC_RECON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CC_RECON.Designer.cs">
+      <DependentUpon>Admin_CC_RECON.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CC_INFRA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CC_INFRA.Designer.cs">
+      <DependentUpon>Admin_CC_INFRA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CC_CEDEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CC_CEDEN.Designer.cs">
+      <DependentUpon>Admin_CC_CEDEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CC_ESGOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CC_ESGOT.Designer.cs">
+      <DependentUpon>Admin_CC_ESGOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Pag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Pag.Designer.cs">
+      <DependentUpon>Admin_Pag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Lotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Lotes.Designer.cs">
+      <DependentUpon>Admin_Lotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Quotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Quotas.Designer.cs">
+      <DependentUpon>Admin_Quotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Doc_Parametros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Doc_Parametros.Designer.cs">
+      <DependentUpon>Form_Doc_Parametros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Calc_Euro_Escudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Calc_Euro_Escudos.Designer.cs">
+      <DependentUpon>Form_Calc_Euro_Escudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Period_Years.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Period_Years.Designer.cs">
+      <DependentUpon>Form_Period_Years.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Folha_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Folha_Caixa.Designer.cs">
+      <DependentUpon>Form_Folha_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Recibo_Quotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Recibo_Quotas.Designer.cs">
+      <DependentUpon>Form_Recibo_Quotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Iban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Iban.Designer.cs">
+      <DependentUpon>Form_Iban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Period.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Period.Designer.cs">
+      <DependentUpon>Form_Period.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Receipt_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Receipt_Details.Designer.cs">
+      <DependentUpon>Form_Receipt_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress_Form_Empty_Template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevExpress_Form_Empty_Template.Designer.cs">
+      <DependentUpon>DevExpress_Form_Empty_Template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Value .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Value .Designer.cs">
+      <DependentUpon>Form_Value .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Lote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Lote.Designer.cs">
+      <DependentUpon>Form_Lote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Year.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Year.Designer.cs">
+      <DependentUpon>Form_Year.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Caixa.Designer.cs">
+      <DependentUpon>Form_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Caixa.Designer.cs">
+      <DependentUpon>Admin_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Joias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Joias.Designer.cs">
+      <DependentUpon>Admin_Joias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_Member_Add_Joia .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find_Member_Add_Joia .Designer.cs">
+      <DependentUpon>Find_Member_Add_Joia .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find_Member_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find_Member_Form.Designer.cs">
+      <DependentUpon>Find_Member_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Envelope.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Envelope.Designer.cs">
+      <DependentUpon>Form_Envelope.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Year_Month .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Year_Month .Designer.cs">
+      <DependentUpon>Form_Year_Month .cs</DependentUpon>
+    </Compile>
+    <Compile Include="GesAMFC_MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesAMFC_MainForm.Designer.cs">
+      <DependentUpon>GesAMFC_MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AMFC_Members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AMFC_Members.Designer.cs">
+      <DependentUpon>Admin_AMFC_Members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\LibraryDateTime.cs" />
+    <Compile Include="App_Code\LibraryXML.cs" />
+    <Compile Include="Library_AMFC.cs" />
+    <Compile Include="Library_AMFC_SQL.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_Form.Designer.cs">
+      <DependentUpon>Member_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form_Payment_Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Payment_Receipt.Designer.cs">
+      <DependentUpon>Form_Payment_Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitFormLoadingPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitFormLoadingPanel.designer.cs">
+      <DependentUpon>WaitFormLoadingPanel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_CC_RECON.resx">
+      <DependentUpon>Admin_CC_RECON.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CC_INFRA.resx">
+      <DependentUpon>Admin_CC_INFRA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CC_CEDEN.resx">
+      <DependentUpon>Admin_CC_CEDEN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CC_ESGOT.resx">
+      <DependentUpon>Admin_CC_ESGOT.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Pag.resx">
+      <DependentUpon>Admin_Pag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Lotes.resx">
+      <DependentUpon>Admin_Lotes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Quotas.resx">
+      <DependentUpon>Admin_Quotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Doc_Parametros.resx">
+      <DependentUpon>Form_Doc_Parametros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Calc_Euro_Escudos.resx">
+      <DependentUpon>Form_Calc_Euro_Escudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Period_Years.resx">
+      <DependentUpon>Form_Period_Years.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Folha_Caixa.resx">
+      <DependentUpon>Form_Folha_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Recibo_Quotas.resx">
+      <DependentUpon>Form_Recibo_Quotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Iban.resx">
+      <DependentUpon>Form_Iban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Period.resx">
+      <DependentUpon>Form_Period.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Receipt_Details.resx">
+      <DependentUpon>Form_Receipt_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevExpress_Form_Empty_Template.resx">
+      <DependentUpon>DevExpress_Form_Empty_Template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Value .resx">
+      <DependentUpon>Form_Value .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Lote.resx">
+      <DependentUpon>Form_Lote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Year.resx">
+      <DependentUpon>Form_Year.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Caixa.resx">
+      <DependentUpon>Form_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Caixa.resx">
+      <DependentUpon>Admin_Caixa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Joias.resx">
+      <DependentUpon>Admin_Joias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Member_Add_Joia .resx">
+      <DependentUpon>Find_Member_Add_Joia .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find_Member_Form.resx">
+      <DependentUpon>Find_Member_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Envelope.resx">
+      <DependentUpon>Form_Envelope.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Year_Month .resx">
+      <DependentUpon>Form_Year_Month .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesAMFC_MainForm.resx">
+      <DependentUpon>GesAMFC_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AMFC_Members.resx">
+      <DependentUpon>Admin_AMFC_Members.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_Form.resx">
+      <DependentUpon>Member_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form_Payment_Receipt.resx">
+      <DependentUpon>Form_Payment_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitFormLoadingPanel.resx">
+      <DependentUpon>WaitFormLoadingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bd\CC_CEDEN.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\CC_ESGOT.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\CC_INFRA.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\CC_RECON.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DBs-Bckup\OLEDB_Provider.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_CAIXA.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_CARTA.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_CEDEN.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_ESGOT.dbf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_INFRA.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_JOIAS.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_LOTES.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_PARAM.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_QUOTA.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_RECIB.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_RECON.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DB_SOCIO.DBF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="bd\DBs-Bckup\OLD_PROGRAM_VERSION.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Export\Excel\FOLHAS_CAIXA\Folha_Caixa_Minuta.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Export\Excel\RECIBOS\QUOTAS\Impresso_Quotas_Minuta_2018.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Export\Excel\SOCIOS\Lista_SOCIOS_v0.1_20170308134937.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Export\Word\ENVELOPES\AMFC-Envelope-Template.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Export\Word\RECIBOS\AMFC-Recibo-Template.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Export\Word\SOCIOS\Envelope_Socio_105_20170314140516.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="GesAMFCgitRepo\GesAMFCgitRepo.zip" />
+    <None Include="Images\CatraponaGest-Logo\CatraponaGest-Logo-02\CatraponaGest-Logo-02.zip" />
+    <None Include="Images\GesAMFC-Images\Common\all_members-icon.pdn" />
+    <None Include="Images\icons16x16\portal.pdn" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Templates\AMFC-Declaraco-Socio-Total-Pagamentos-Liquidados-Template - 20180108.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\AMFC-Declaraco-Socio-Total-Pagamentos-Liquidados-Template.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\AMFC-Envelope-Template - 20180219.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\AMFC-Envelope-Template.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\AMFC-Envelope-Template_20180304.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\AMFC-Recibo-Template.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Folha Timbrado.docx" />
+    <None Include="Templates\Folha_Caixa_Minuta  - 20180220.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Folha_Caixa_Minuta.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Impresso Carta.pdf" />
+    <None Include="Templates\Impresso_Quotas_Minuta - 20180221.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Impresso_Quotas_Minuta.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Logo-Templates - 20180220.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\NIB-Associacao_Moradores_Foros_Catrapona-20180227.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\NIB-Associacao_Moradores_Foros_Catrapona.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Tabela_Parametros.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Tabela_Parametros.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\Tabela_Parametros.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.BonusSkins.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Charts.Designer.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Charts.v15.1.Core.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Data.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Data.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.UI.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.DataAccess.v15.1.UI.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Images.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Office.v15.1.Core.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Office.v15.1.Core.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Printing.v15.1.Core.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Printing.v15.1.Core.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.RichEdit.v15.1.Core.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.RichEdit.v15.1.Core.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Sparkline.v15.1.Core.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Spreadsheet.v15.1.Core.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Spreadsheet.v15.1.Core.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Tutorials.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.UI.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.Utils.v15.1.UI.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraBars.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraBars.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.UI.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.Wizard.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraCharts.v15.1.Wizard.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraEditors.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraEditors.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraGrid.v15.1.Design.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraGrid.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraGrid.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraLayout.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraLayout.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraNavBar.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraPrinting.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.Design.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.Extensions.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.Extensions.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraRichEdit.v15.1.resources.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraSpreadsheet.v15.1.Design.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraSpreadsheet.v15.1.dll" />
+    <Content Include="DevExpress-Framework-v15.1.7\DevExpress.XtraSpreadsheet.v15.1.resources.dll" />
+    <Content Include="Export\FicheirosSocios\socio_001\fich_socio_01.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GesAMFC.ico" />
+    <Content Include="GesAMFCgitRepo\GesAMFCgitRepo.txt" />
+    <Content Include="GesAMFC_Config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Images\CatraponaGest-Logo.png" />
+    <Content Include="Images\CatraponaGest-Logo\CatraponaGest-Logo-01\AMFC_Logo-01.png" />
+    <Content Include="Images\CatraponaGest-Logo\CatraponaGest-Logo-02\AMFC_Logo-02.png" />
+    <Content Include="Images\GesAMFC-Images\Common\add-icon-16x16.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\all_members-icon.png" />
+    <None Include="Images\GesAMFC-Images\Common\refresh.png" />
+    <Content Include="Images\GesAMFC-Images\Common\EuroConversor-medium.png" />
+    <Content Include="Images\GesAMFC-Images\Common\EuroConversor-small.png" />
+    <Content Include="Images\GesAMFC-Images\Common\EuroConversor.png" />
+    <Content Include="Templates\Logo-Templates.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Images\GesAMFC-Images\Common\all_members-small.png" />
+    <Content Include="Images\GesAMFC-Images\Common\all_members-icon_medium.png" />
+    <Content Include="Images\GesAMFC-Images\Common\amfc_loading.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\Calendar_Icon_Medium.png" />
+    <Content Include="Images\GesAMFC-Images\Common\cancel-icon-16x16.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\carimbo_em_pagamento.png" />
+    <Content Include="Images\GesAMFC-Images\Common\carimbo_em_pagamento_small.png" />
+    <Content Include="Images\GesAMFC-Images\Common\carimbo_nao_pago.png" />
+    <Content Include="Images\GesAMFC-Images\Common\carimbo_nao_pago_small.png" />
+    <Content Include="Images\GesAMFC-Images\Common\carimbo_pago.png" />
+    <Content Include="Images\GesAMFC-Images\Common\carimbo_pago_small.png" />
+    <Content Include="Images\GesAMFC-Images\Common\delete-icon-16x16.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\edit-icon-16x16.gif" />
+    <None Include="Images\GesAMFC-Images\Common\euro_icon.png" />
+    <Content Include="Images\GesAMFC-Images\Common\find-icon-16x16.gif" />
+    <None Include="Images\GesAMFC-Images\Common\hide_more.png" />
+    <Content Include="Images\GesAMFC-Images\Common\find.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\find.png" />
+    <Content Include="Images\GesAMFC-Images\Common\find_16x16.png" />
+    <Content Include="Images\GesAMFC-Images\Common\find_member.png" />
+    <Content Include="Images\GesAMFC-Images\Common\folder.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\key.ico" />
+    <None Include="Images\GesAMFC-Images\Common\loading-gif-transparent-10.gif" />
+    <Content Include="Images\GesAMFC-Images\Common\member-find.png" />
+    <Content Include="Images\GesAMFC-Images\Common\member-icon.png" />
+    <Content Include="Images\GesAMFC-Images\Common\member-medium.png" />
+    <Content Include="Images\GesAMFC-Images\Common\open.png" />
+    <Content Include="Images\GesAMFC-Images\Common\open_16x16.png" />
+    <Content Include="Images\GesAMFC-Images\Common\payment_close.png" />
+    <Content Include="Images\GesAMFC-Images\Common\payment_del.png" />
+    <Content Include="Images\GesAMFC-Images\Common\payment_edit.png" />
+    <Content Include="Images\GesAMFC-Images\Common\payment_find.png" />
+    <Content Include="Images\GesAMFC-Images\Common\payment_new.png" />
+    <Content Include="Images\GesAMFC-Images\Common\payment_open.png" />
+    <Content Include="Images\GesAMFC-Images\Common\pay_period.png" />
+    <Content Include="Images\GesAMFC-Images\Common\receipt.png" />
+    <Content Include="Images\GesAMFC-Images\Common\receipt_find.png" />
+    <Content Include="Images\GesAMFC-Images\Common\receipt_new.png" />
+    <Content Include="Images\GesAMFC-Images\Common\receipt_open.png" />
+    <Content Include="Images\GesAMFC-Images\Common\show_more.png" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Icons\database.ico" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Icons\GesAMFC_Logo.ico" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Logo\AMFC_Logo-01.png" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Logo\AMFC_Logo-02.png" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Logo\GesAMFC.ico" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Logo\GesAMFC_Logo.ico" />
+    <Content Include="Images\GesAMFC-Images\GesAMFC-Logo\key.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\all_members-icon.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-01-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-01-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-01-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-01-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-01-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-01.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-02-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-02-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-02-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-02-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-02-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-02.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-03-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-03-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-03-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-03-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-03-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-03.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-04-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-04-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-04-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-04-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-04-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-04.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-05-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-05-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-05-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-05-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-05-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-05.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-06-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-06-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-06-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-06-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-06-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-06.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-07-add.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-07-del.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-07-edit.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-07-find.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-07-small.png" />
+    <Content Include="Images\GesAMFC-Images\Members\Member-Icon-07.png" />
+    <Content Include="Images\GesAMFC-Images\Members\member-icon.png" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_01.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_01_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_01_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_01_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_01_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_01_small.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_02.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_02_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_02_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_02_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_02_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_02_small.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_03.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_03_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_03_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_03_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_03_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_03_small.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_04.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_04_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_04_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_04_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_04_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_04_small.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_05.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_05_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_05_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_05_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_05_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_05_small.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_06.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_06_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_06_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_06_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_06_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_06_small.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_07.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_07_add.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_07_del.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_07_edit.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_07_find.ico" />
+    <Content Include="Images\GesAMFC-Images\Members\member_icon_07_small.ico" />
+    <Content Include="Images\icons10x10\add_icon-10x10.gif" />
+    <Content Include="Images\icons10x10\cancel-icon_10x10.png" />
+    <Content Include="Images\icons10x10\close-icon-10x10.gif" />
+    <Content Include="Images\icons10x10\configure-icon-10x10.gif" />
+    <Content Include="Images\icons10x10\delete-icon-10x10.gif" />
+    <Content Include="Images\icons10x10\edit-icon-10x10.gif" />
+    <Content Include="Images\icons10x10\gear-icon-10x10.gif" />
+    <Content Include="Images\icons10x10\save-icon-10x10.gif" />
+    <Content Include="Images\icons10x10\save-icon-gray-10x10.gif" />
+    <Content Include="Images\icons10x10\synchonize-icon-10x10.gif" />
+    <Content Include="Images\icons16x16\accept-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\add-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\add-icon-16x16_bullet.gif" />
+    <Content Include="Images\icons16x16\addressbook-icon-16x16.png" />
+    <Content Include="Images\icons16x16\alert-icon-16x16.png" />
+    <Content Include="Images\icons16x16\analysis.gif" />
+    <Content Include="Images\icons16x16\analysis.ico" />
+    <Content Include="Images\icons16x16\analysis_add.gif" />
+    <Content Include="Images\icons16x16\analysis_cancel.gif" />
+    <Content Include="Images\icons16x16\analysis_delete.gif" />
+    <Content Include="Images\icons16x16\analysis_disabled.gif" />
+    <Content Include="Images\icons16x16\analysis_edit.gif" />
+    <Content Include="Images\icons16x16\analysis_gear.gif" />
+    <Content Include="Images\icons16x16\analysis_save.gif" />
+    <Content Include="Images\icons16x16\analysis_sync.gif" />
+    <Content Include="Images\icons16x16\analysis_transparent.ico" />
+    <Content Include="Images\icons16x16\application.gif" />
+    <Content Include="Images\icons16x16\application.ico" />
+    <Content Include="Images\icons16x16\application_add.gif" />
+    <Content Include="Images\icons16x16\application_cancel.gif" />
+    <Content Include="Images\icons16x16\application_delete.gif" />
+    <Content Include="Images\icons16x16\application_disabled.gif" />
+    <Content Include="Images\icons16x16\application_edit.gif" />
+    <Content Include="Images\icons16x16\application_gear.gif" />
+    <Content Include="Images\icons16x16\application_save.gif" />
+    <Content Include="Images\icons16x16\application_sync.gif" />
+    <Content Include="Images\icons16x16\application_transparent.ico" />
+    <Content Include="Images\icons16x16\arrow_down.gif" />
+    <Content Include="Images\icons16x16\arrow_down_s.png" />
+    <Content Include="Images\icons16x16\arrow_left.gif" />
+    <Content Include="Images\icons16x16\arrow_refresh.png" />
+    <Content Include="Images\icons16x16\arrow_right.gif" />
+    <Content Include="Images\icons16x16\arrow_right.png" />
+    <Content Include="Images\icons16x16\arrow_up.gif" />
+    <Content Include="Images\icons16x16\arrow_up_s.png" />
+    <Content Include="Images\icons16x16\cancel-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\cancel-icon-16x16_02.gif" />
+    <Content Include="Images\icons16x16\checkbox_true.png" />
+    <Content Include="Images\icons16x16\clear.png" />
+    <Content Include="Images\icons16x16\close-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\configure-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\copy.png" />
+    <Content Include="Images\icons16x16\cut.png" />
+    <Content Include="Images\icons16x16\database.gif" />
+    <Content Include="Images\icons16x16\database.ico" />
+    <Content Include="Images\icons16x16\databases.gif" />
+    <Content Include="Images\icons16x16\database_add.gif" />
+    <Content Include="Images\icons16x16\database_delete.gif" />
+    <Content Include="Images\icons16x16\database_edit.gif" />
+    <Content Include="Images\icons16x16\database_gear.gif" />
+    <Content Include="Images\icons16x16\database_gear.png" />
+    <Content Include="Images\icons16x16\database_save.gif" />
+    <Content Include="Images\icons16x16\delete-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\delete-icon-16x16_02.gif" />
+    <Content Include="Images\icons16x16\delete2.gif" />
+    <Content Include="Images\icons16x16\domain-gear.gif" />
+    <Content Include="Images\icons16x16\domain-sync.gif" />
+    <Content Include="Images\icons16x16\domain.gif" />
+    <Content Include="Images\icons16x16\domain.ico" />
+    <Content Include="Images\icons16x16\domain_add.gif" />
+    <Content Include="Images\icons16x16\domain_admin.gif" />
+    <Content Include="Images\icons16x16\domain_cancel.gif" />
+    <Content Include="Images\icons16x16\domain_config.gif" />
+    <Content Include="Images\icons16x16\domain_delete.gif" />
+    <Content Include="Images\icons16x16\domain_disabled.gif" />
+    <Content Include="Images\icons16x16\domain_edit.gif" />
+    <Content Include="Images\icons16x16\domain_save.gif" />
+    <Content Include="Images\icons16x16\domain_transparent.ico" />
+    <Content Include="Images\icons16x16\edit-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\email.gif" />
+    <Content Include="Images\icons16x16\emails.gif" />
+    <Content Include="Images\icons16x16\email_add.gif" />
+    <Content Include="Images\icons16x16\email_delete.gif" />
+    <Content Include="Images\icons16x16\email_edit.gif" />
+    <Content Include="Images\icons16x16\email_save.gif" />
+    <Content Include="Images\icons16x16\entities.ico" />
+    <Content Include="Images\icons16x16\entities_transparent.ico" />
+    <Content Include="Images\icons16x16\exclamation.png" />
+    <Content Include="Images\icons16x16\Filters.gif" />
+    <Content Include="Images\icons16x16\Filters.ico" />
+    <Content Include="Images\icons16x16\Filters_add.gif" />
+    <Content Include="Images\icons16x16\Filters_cancel.gif" />
+    <Content Include="Images\icons16x16\Filters_delete.gif" />
+    <Content Include="Images\icons16x16\Filters_disabled.gif" />
+    <Content Include="Images\icons16x16\Filters_edit.gif" />
+    <Content Include="Images\icons16x16\Filters_gear.gif" />
+    <Content Include="Images\icons16x16\Filters_save.gif" />
+    <Content Include="Images\icons16x16\Filters_sync.gif" />
+    <Content Include="Images\icons16x16\find.gif" />
+    <Content Include="Images\icons16x16\folder.gif" />
+    <Content Include="Images\icons16x16\folder_add.gif" />
+    <Content Include="Images\icons16x16\folder_delete.gif" />
+    <Content Include="Images\icons16x16\folder_edit.gif" />
+    <Content Include="Images\icons16x16\folder_save.gif" />
+    <Content Include="Images\icons16x16\gear-icon-16x16.gif" />
+    <Content Include="Images\icons16x16\group.gif" />
+    <Content Include="Images\icons16x16\group.ico" />
+    <Content Include="Images\icons16x16\group.png" />
+    <Content Include="Images\icons16x16\group_add.gif" />
+    <Content Include="Images\icons16x16\group_cancel.gif" />
+    <Content Include="Images\icons16x16\group_delete.gif" />
+    <Content Include="Images\icons16x16\group_disabled.gif" />
+    <Content Include="Images\icons16x16\group_edit.gif" />
+    <Content Include="Images\icons16x16\group_gear.gif" />
+    <Content Include="Images\icons16x16\group_parent-add.gif" />
+    <Content Include="Images\icons16x16\group_parent-edit.gif" />
+    <Content Include="Images\icons16x16\group_parent-save.gif" />
+    <Content Include="Images\icons16x16\group_parent.gif" />
+    <Content Include="Images\icons16x16\group_parent_cancel.gif" />
+    <Content Include="Images\icons16x16\group_parent_delete.gif" />
+    <Content Include="Images\icons16x16\group_parent_disabled.gif" />
+    <Content Include="Images\icons16x16\group_parent_gear.gif" />
+    <Content Include="Images\icons16x16\group_parent_sync.gif" />
+    <Content Include="Images\icons16x16\group_save.gif" />
+    <Content Include="Images\icons16x16\group_sync.gif" />
+    <Content Include="Images\icons16x16\group_transparent.ico" />
+    <Content Include="Images\icons16x16\info-icon.png" />
+    <Content Include="Images\icons16x16\key.ico" />
+    <Content Include="Images\icons16x16\menu.png" />
+    <Content Include="Images\icons16x16\MMI.gif" />
+    <Content Include="Images\icons16x16\MMI.ico" />
+    <Content Include="Images\icons16x16\paste.png" />
+    <Content Include="Images\icons16x16\pencil.png" />
+    <Content Include="Images\icons16x16\permission.gif" />
+    <Content Include="Images\icons16x16\permission.ico" />
+    <Content Include="Images\icons16x16\permission_add.gif" />
+    <Content Include="Images\icons16x16\permission_cancel.gif" />
+    <Content Include="Images\icons16x16\permission_delete.gif" />
+    <Content Include="Images\icons16x16\permission_disabled.gif" />
+    <Content Include="Images\icons16x16\permission_edit.gif" />
+    <Content Include="Images\icons16x16\permission_gear.gif" />
+    <Content Include="Images\icons16x16\permission_save.gif" />
+    <Content Include="Images\icons16x16\permission_sync.gif" />
+    <Content Include="Images\icons16x16\permission_transparent.ico" />
+    <Content Include="Images\icons16x16\portal.gif" />
+    <Content Include="Images\icons16x16\portal.ico" />
+    <Content Include="Images\icons16x16\portal_admin.gif" />
+    <Content Include="Images\icons16x16\portal_transparent.ico" />
+    <Content Include="Images\icons16x16\refresh.png" />
+    <Content Include="Images\icons16x16\reload.png" />
+    <Content Include="Images\icons16x16\save.gif" />
+    <Content Include="Images\icons16x16\save.png" />
+    <Content Include="Images\icons16x16\subgroup.ico" />
+    <Content Include="Images\icons16x16\subgroup_transparent.ico" />
+    <Content Include="Images\icons16x16\synchonize.gif" />
+    <Content Include="Images\icons16x16\theme.gif" />
+    <Content Include="Images\icons16x16\theme.ico" />
+    <Content Include="Images\icons16x16\theme_add.gif" />
+    <Content Include="Images\icons16x16\theme_admin.gif" />
+    <Content Include="Images\icons16x16\theme_admin_level01.gif" />
+    <Content Include="Images\icons16x16\theme_admin_level01_disabled.gif" />
+    <Content Include="Images\icons16x16\theme_admin_level02.gif" />
+    <Content Include="Images\icons16x16\theme_admin_level02_disabled.gif" />
+    <Content Include="Images\icons16x16\theme_admin_level03.gif" />
+    <Content Include="Images\icons16x16\theme_admin_level03_disabled.gif" />
+    <Content Include="Images\icons16x16\theme_cancel.gif" />
+    <Content Include="Images\icons16x16\theme_delete.gif" />
+    <Content Include="Images\icons16x16\theme_edit.gif" />
+    <Content Include="Images\icons16x16\theme_old.gif" />
+    <Content Include="Images\icons16x16\theme_save.gif" />
+    <Content Include="Images\icons16x16\theme_transparent.ico" />
+    <Content Include="Images\icons16x16\user.gif" />
+    <Content Include="Images\icons16x16\user.ico" />
+    <Content Include="Images\icons16x16\Users.ico" />
+    <Content Include="Images\icons16x16\user_add.gif" />
+    <Content Include="Images\icons16x16\user_cancel.gif" />
+    <Content Include="Images\icons16x16\user_delete.gif" />
+    <Content Include="Images\icons16x16\user_disabled.gif" />
+    <Content Include="Images\icons16x16\user_edit.gif" />
+    <Content Include="Images\icons16x16\user_save.gif" />
+    <Content Include="Images\icons16x16\user_sync.gif" />
+    <Content Include="Images\icons16x16\user_transparent.ico" />
+    <Content Include="Images\icons16x16\webservice.gif" />
+    <Content Include="Images\icons16x16\window_cascade.png" />
+    <Content Include="Images\icons16x16\window_tileH.png" />
+    <Content Include="Images\icons16x16\window_tileV.png" />
+    <Content Include="Images\icons19x19\down.gif" />
+    <Content Include="Images\icons19x19\down_clean.gif" />
+    <Content Include="Images\icons19x19\left.gif" />
+    <Content Include="Images\icons19x19\left_clean.gif" />
+    <Content Include="Images\icons19x19\right.gif" />
+    <Content Include="Images\icons19x19\right_clean.gif" />
+    <Content Include="Images\icons19x19\up.gif" />
+    <Content Include="Images\icons19x19\up_clean.gif" />
+    <Content Include="Images\Icons\Common\base.css" />
+    <Content Include="Images\Icons\Common\bgo.gif" />
+    <Content Include="Images\Icons\Common\check_all.gif" />
+    <Content Include="Images\Icons\Common\close_icon.gif" />
+    <Content Include="Images\Icons\Common\close_icon_hottracked.gif" />
+    <Content Include="Images\Icons\Common\Common.css" />
+    <Content Include="Images\Icons\Common\gvHeaderBackground.gif" />
+    <Content Include="Images\Icons\Common\LoadingPT.gif" />
+    <Content Include="Images\Icons\Common\na.png" />
+    <Content Include="Images\Icons\Common\rootBgLeft.gif" />
+    <Content Include="Images\Icons\Common\rootBgRight.gif" />
+    <Content Include="Images\Icons\Common\rootBgTopLeft.gif" />
+    <Content Include="Images\Icons\Common\rootBgTopRight.gif" />
+    <Content Include="Images\Icons\Common\sitemap.gif" />
+    <Content Include="Images\Icons\Common\style.css" />
+    <Content Include="Images\Icons\Common\topBg.gif" />
+    <Content Include="Images\Icons\Common\uncheck_all.gif" />
+    <Content Include="Images\Icons\Common\viewmag.png" />
+    <Content Include="Images\Icons\Common\_Common.css" />
+    <Content Include="Images\Icons\export\barChart_icon.png" />
+    <Content Include="Images\Icons\export\barChart_icon_disabled.png" />
+    <Content Include="Images\Icons\export\barChart_icon_Hottracked.png" />
+    <Content Include="Images\Icons\export\Bat_Charts\3DSeries.png" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_01.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_02.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_03.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_04.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_05.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_06.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_07.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_08.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_09.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\barChart_icon_10.jpg" />
+    <Content Include="Images\Icons\export\Bat_Charts\Basic2DSeries.png" />
+    <Content Include="Images\Icons\export\excel.png" />
+    <Content Include="Images\Icons\export\excel_icon.gif" />
+    <Content Include="Images\Icons\export\excel_icon_disabled.gif" />
+    <Content Include="Images\Icons\export\excel_icon_Hottracked.gif" />
+    <Content Include="Images\Icons\export\pdf_icon.gif" />
+    <Content Include="Images\Icons\export\pdf_icon_disabled.gif" />
+    <Content Include="Images\Icons\export\pdf_icon_Hottracked.gif" />
+    <Content Include="Images\Icons\export\pieChart_icon.jpg" />
+    <Content Include="Images\Icons\export\pieChart_icon_disabled.jpg" />
+    <Content Include="Images\Icons\export\pieChart_icon_Hottracked.jpg" />
+    <Content Include="Images\Icons\export\print.png" />
+    <Content Include="Images\Icons\export\print2.png" />
+    <Content Include="Images\Icons\export\print_preview.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_first_page_disabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_first_page_enabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_last_page_disabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_last_page_enabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_next_page_disabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_next_page_enabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_previous_page_disabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\move_to_previous_page_enabled.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\print_report_all_pages.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\print_report_current_page.png" />
+    <Content Include="Images\Icons\export\Report_Buttons\save_report.png" />
+    <Content Include="Images\Icons\export\save.png" />
+    <Content Include="Images\Icons\export\scheduler_icon.jpg" />
+    <Content Include="Images\Icons\export\scheduler_icon_disabled.jpg" />
+    <Content Include="Images\Icons\export\scheduler_icon_Hottracked.jpg" />
+    <Content Include="Images\Icons\Help\Grids\gvHeaderFilter.png" />
+    <Content Include="Images\Icons\Help\Grids\gvHeaderSortDown.png" />
+    <Content Include="Images\Icons\Help\Grids\gvHeaderSortUp.png" />
+    <Content Include="Images\Icons\Help\Grids\pgSortByColumn.png" />
+    <Content Include="Images\Icons\Help\help_icon.jpg" />
+    <Content Include="Images\Icons\Help\help_icon_Hottracked.jpg" />
+    <Content Include="Images\Icons\Help\help_icon_Hottracked_transparent.png" />
+    <Content Include="Images\Icons\Help\help_icon_transparent.png" />
+    <Content Include="Images\Icons\Help\inform_icon.png" />
+    <Content Include="Images\Icons\Help\Other\images.jpg" />
+    <Content Include="Images\Icons\Help\Other\images2.jpg" />
+    <Content Include="Images\Icons\Help\Other\images3.jpg" />
+    <Content Include="Images\Icons\Help\Other\images4.jpg" />
+    <Content Include="Images\Icons\Help\Other\images5.jpg" />
+    <Content Include="Images\Icons\Help\Other\images6.jpg" />
+    <Content Include="Images\Icons\Help\Other\images7.jpg" />
+    <Content Include="Images\Icons\Help\Other\images8.jpg" />
+    <Content Include="Images\Icons\Help\Other\infor_icon.jpg" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnAdd.png" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnDel.png" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnDown.png" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnEdit.png" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnLeft.png" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnRight.png" />
+    <Content Include="Images\Icons\Help\UC_GridTemplates\btnUp.png" />
+    <Content Include="Images\Icons\help_icon.png" />
+    <Content Include="Images\Icons\help_icon_mouseover.png" />
+    <Content Include="Images\Icons\menu\barChart_icon.gif" />
+    <Content Include="Images\Icons\menu\btnCalendar_ico.gif" />
+    <Content Include="Images\Icons\menu\exit.gif" />
+    <Content Include="Images\Icons\menu\folhetos.gif" />
+    <Content Include="Images\Icons\menu\grid_ico.gif" />
+    <Content Include="Images\Icons\menu\header_footer.gif" />
+    <Content Include="Images\Icons\menu\home.gif" />
+    <Content Include="Images\Icons\menu\logs.gif" />
+    <Content Include="Images\Icons\menu\password.gif" />
+    <Content Include="Images\Icons\menu\pdf_ico.gif" />
+    <Content Include="Images\Icons\menu\pieChart_ico.gif" />
+    <Content Include="Images\Icons\menu\produtos.gif" />
+    <Content Include="Images\Icons\menu\scheduler_icon.gif" />
+    <Content Include="Images\Icons\menu\users.gif" />
+    <Content Include="Images\Icons\menu\xls_ico.gif" />
+    <Content Include="Images\Icons\rangedates\date_add.png" />
+    <Content Include="Images\Icons\rangedates\date_delete.png" />
+    <Content Include="Images\Icons\rangedates\date_edit.png" />
+    <Content Include="Images\Icons\users\group_add.gif" />
+    <Content Include="Images\Icons\users\group_delete.gif" />
+    <Content Include="Images\Icons\users\group_edit.gif" />
+    <Content Include="Images\Icons\users\user_add.gif" />
+    <Content Include="Images\Icons\users\user_delete.gif" />
+    <Content Include="Images\Icons\users\user_edit.gif" />
+    <Content Include="Images\Icons\users\user_find.gif" />
+    <Content Include="Images\spots_images\assign_tag_to_spots.png" />
+    <Content Include="Images\spots_images\cinema_played.png" />
+    <Content Include="Images\spots_images\cinema_to_play.png" />
+    <Content Include="Images\spots_images\copy_sector_tag.png" />
+    <Content Include="Images\spots_images\de-assign_tag_to_spots.png" />
+    <Content Include="Images\spots_images\internet_to_view.png" />
+    <Content Include="Images\spots_images\internet_viewed.png" />
+    <Content Include="Images\spots_images\manual_tags_approve.png" />
+    <Content Include="Images\spots_images\outdoor_to_view.png" />
+    <Content Include="Images\spots_images\outdoor_viewed.png" />
+    <Content Include="Images\spots_images\press_to_view.png" />
+    <Content Include="Images\spots_images\press_viewed.png" />
+    <Content Include="Images\spots_images\radio_played.png" />
+    <Content Include="Images\spots_images\radio_to_play.png" />
+    <Content Include="Images\spots_images\sector_tags_approve.png" />
+    <Content Include="Images\spots_images\tags_reject.png" />
+    <Content Include="Images\spots_images\tv_played.png" />
+    <Content Include="Images\spots_images\tv_to_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Export\FicheirosSocios\socio_002\" />
+    <Folder Include="Export\FicheirosSocios\socio_003\" />
+    <Folder Include="Export\FicheirosSocios\socio_004\" />
+    <Folder Include="Export\FicheirosSocios\socio_005\" />
+    <Folder Include="Export\FicheirosSocios\socio_006\" />
+    <Folder Include="Export\FicheirosSocios\socio_007\" />
+    <Folder Include="Export\FicheirosSocios\socio_010\" />
+    <Folder Include="Export\FicheirosSocios\socio_011\" />
+    <Folder Include="Export\FicheirosSocios\socio_012\" />
+    <Folder Include="Export\FicheirosSocios\socio_013\" />
+    <Folder Include="Export\FicheirosSocios\socio_014\" />
+    <Folder Include="Export\FicheirosSocios\socio_015\" />
+    <Folder Include="Export\FicheirosSocios\socio_016\" />
+    <Folder Include="Export\FicheirosSocios\socio_017\" />
+    <Folder Include="Export\FicheirosSocios\socio_018\" />
+    <Folder Include="Export\FicheirosSocios\socio_019\" />
+    <Folder Include="Export\FicheirosSocios\socio_020\" />
+    <Folder Include="Export\FicheirosSocios\socio_021\" />
+    <Folder Include="Export\FicheirosSocios\socio_022\" />
+    <Folder Include="Export\FicheirosSocios\socio_023\" />
+    <Folder Include="Export\FicheirosSocios\socio_024\" />
+    <Folder Include="Export\FicheirosSocios\socio_025\" />
+    <Folder Include="Export\FicheirosSocios\socio_026\" />
+    <Folder Include="Export\FicheirosSocios\socio_027\" />
+    <Folder Include="Export\FicheirosSocios\socio_028\" />
+    <Folder Include="Export\FicheirosSocios\socio_029\" />
+    <Folder Include="Export\FicheirosSocios\socio_030\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

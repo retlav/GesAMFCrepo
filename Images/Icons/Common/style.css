@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*	-----------------------------------------------------
+	
+	Base Style Sheet
+	
+---------------------------------------------------------
+
+	* Name: Marktest
+	
+	* Developed by: Marktest
+	  
+------------------------------------------------------ */
+
+BODY, FORM, TR, TD, TABLE, DIV {
+  font-size:12px;
+  font-family:Verdana;
+  color:#333333;
+  text-align:center;
+}
+TABLE, TR, TD {
+  border:0;
+  font-size:10px;
+  font-family:Verdana;
+  color: #333333;
+  line-height:18px;
+}
+DIV {
+  float:left;
+}
+a img {
+  border: 0;
+  outline: none;
+  text-decoration:none;
+}
+.tdt {
+  font-size:14px;
+  font-variant:small-caps;
+  color: #339999;
+  height: 75px;
+  line-height:75px;
+  text-align:center;
+  border-width:0 0 2px 0;
+  border-style:none none solid none;
+  border-color:#FFFFFF #FFFFFF #339999 #FFFFFF;
+}
+.tdf {
+  font-size:10px;
+  color: #339999;
+  height: 20px;
+  line-height:15px;
+  text-align:right;
+  border-width:2px 0 0 0;
+  border-style:solid none none none;
+  border-color:#339999 #FFFFFF #FFFFFF #FFFFFF;
+}
+.tdh {
+  text-align:center;
+  border-width:0 0 2px 0;
+  border-style:none none solid none;
+  border-color:#FFFFFF #FFFFFF #339999 #FFFFFF;
+  overflow:hidden;
+}
+.tdr1cr, .tdr1c, .tdr1l {
+  border-width:0 0 1px 1px;
+  border-style:none none solid solid;
+  border-color:#FFFFFF #FFFFFF #99cccc #99cccc;
+}
+.tdr1c {
+  text-align:center;
+}
+.tdr1l {
+  text-align:left;
+}
+.tdr1cr {
+  text-align:center;
+  border-width:0 0 1px 1px;
+}
+.tdr2cr, .tdr2c, .tdr2l {
+  border-width:0 0 1px 1px;
+  border-style:none none solid solid;
+  border-color:#FFFFFF #FFFFFF #339999 #339999;
+}
+.tdr2c {
+  text-align:center;
+}
+.tdr2l {
+  text-align:left;
+}
+.tdr2cr {
+  text-align:center;
+  border-width:0 0 1px 1px;
+}
+
+/*	-----------------------------------------------------
+	
+	end Style Sheet
+	
+------------------------------------------------------ */
