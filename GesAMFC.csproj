@@ -814,7 +814,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="GesAMFC.ico" />
-    <Content Include="GesAMFCgitRepo\GesAMFCgitRepo.txt" />
     <Content Include="GesAMFC_Config.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
